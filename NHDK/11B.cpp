@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+//#include <bits/extc++.h>
 #define int long long
 #define pll pair<long long, long long>
 #define PB emplace_back
@@ -13,14 +14,16 @@
 const int maxN = 1e5 + 5;
 using namespace std;
 
-int t, n;
+int t, x, y;
 int a, b;
 vector<int> v;
 int arr[maxN];
 signed main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    cin >> t;
-    while(t--){
-    }
+    cin >> x >> y;
+    int k = __gcd(x, y);
+    int tx = x / k;
+    int ty = y / k;
+    cout << k << ' ' << tx << ' ' << ty << endl;
 }

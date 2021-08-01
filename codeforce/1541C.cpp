@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+//#include <bits/extc++.h>
 #define int long long
 #define pll pair<long long, long long>
 #define PB emplace_back
@@ -22,5 +23,9 @@ signed main()
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
     cin >> t;
     while(t--){
+        cin >> n;
+        for (int i = 0; i < n;i++)
+            cin >> arr[i];
+        sort(arr, arr + n);
     }
 }

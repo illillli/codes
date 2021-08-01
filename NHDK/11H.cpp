@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+//#include <bits/extc++.h>
 #define int long long
 #define pll pair<long long, long long>
 #define PB emplace_back
@@ -15,12 +16,20 @@ using namespace std;
 
 int t, n;
 int a, b;
+
 vector<int> v;
+string s;
 int arr[maxN];
 signed main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    cin >> t;
-    while(t--){
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> s;
+        if (i == 0)
+            cout << "-1" << endl;
+        else
+            cout << s << endl;
     }
 }

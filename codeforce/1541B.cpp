@@ -22,5 +22,16 @@ signed main()
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
     cin >> t;
     while(t--){
+        cin >> n;
+        int cnt = 0;
+        for (int i = 1; i <= n;i++)
+            cin >> arr[i];
+        for (int i = 1; i < n;i++){
+            for (int j = i + 1; j <= n;j++){
+                if(arr[i]*arr[j]==i+j)
+                    cnt++;
+            }
+        }
+        cout << cnt << endl;
     }
 }

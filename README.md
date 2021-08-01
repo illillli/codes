@@ -1,5 +1,6 @@
 # Codes
-These are my own codes. HA
+These are my own codes.
+Somehow today I created this file.
 
 I am weak.
 Don't dian me.

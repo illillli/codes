@@ -15,15 +15,30 @@ using namespace std;
 
 int t, n;
 int a, b;
-queue<int> v;
+vector<int> v;
 int arr[maxN];
 signed main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    cin >> n;
-    while(n--) {
-        cin >> t;
-        v.push(t);
+    cin >> t;
+    while (t--)
+    {
+        string s;
+        int k = 0;
+        bool legal = true;
+        cin >> s;
+        for (int i = 0; i < s.size(); i++)
+        {
+            if (s[i] == '(')
+                k++;
+            else
+                k--;
+            if (k < 0)
+                legal = false;
+        }
+        if(k != 0 || !legal)
+            cout << "N" << endl;
+        else
+            cout << "Y" << endl;
     }
-    cout << v.size() << endl;
 }

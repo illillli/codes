@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define int long long
 #define pll pair<long long, long long>
-#define PB emplace_back
+#define pb emplace_back
 #define F first
 #define S second
 #define mp make_pair

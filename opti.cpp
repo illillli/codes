@@ -1,6 +1,4 @@
 #pragma GCC optimize("Ofast,unroll-loops")
-#pragma GCC target("avx,avx2,sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,fma,tune=native")
-
 #pragma GCC optimize("inline")
 #pragma GCC optimize("-fgcse")
 #pragma GCC optimize("-fgcse-lm")
@@ -44,3 +42,5 @@
 #pragma GCC optimize("-funsafe-loop-optimizations")
 #pragma GCC optimize("inline-functions-called-once")
 #pragma GCC optimize("-fdelete-null-pointer-checks")
+
+#pragma GCC target("avx,avx2,sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,fma,tune=native")

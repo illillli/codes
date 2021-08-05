@@ -13,7 +13,7 @@
 const int maxN = 1e5 + 5;
 using namespace std;
 
-int t, n;
+int t, n, m;
 int a, b;
 vector<int> v;
 int arr[maxN];

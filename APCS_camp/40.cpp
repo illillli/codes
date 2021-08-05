@@ -15,12 +15,15 @@ signed main()
         for (int j = 1; j <= 6; j++)
         {
             for (int k = 0; k <= i * 6; k++) //6n
+            {
                 DP[i][k + j] += DP[i - 1][k];
+                DP[i][k + j] %= 998244353;
+            }
         }
     }
     while (t--)
     {
         cin >> n >> m;
-        cout << DP[n][m] << endl;
+        cout << DP[n][m] % 998244353 << endl;
     }
 }

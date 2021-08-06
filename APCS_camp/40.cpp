@@ -21,6 +21,12 @@ signed main()
             }
         }
     }
+    cout << endl;
+    cin >> n;
+    /*for (int i = n; i < 6 * n + 1; i++)
+    {
+        cout << DP[n][i] << ' ';
+    }*/
     while (t--)
     {
         cin >> n >> m;

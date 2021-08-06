@@ -15,11 +15,24 @@ using namespace std;
 
 int t, n, m;
 int a, b;
-int ans[maxN];
-string str;
+char ans[maxN];
+string input;
 int arr[maxN];
 signed main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    
+    cin >> input;
+    ans[0] = input[0];
+    int j = 0;
+    for (int i = 1; i < input.size(); i++)
+    {
+        if (j >= 0 && input[i] == ans[j])
+            j--;
+        else
+            ans[++j] = input[i];
+    }
+    for (int i = 0; i <= j;i++){
+        cout << ans[i];
+    }
+    cout << endl;
 }

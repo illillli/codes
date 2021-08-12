@@ -15,8 +15,6 @@ using namespace std;
 
 int t, n, m;
 int a, b;
-int ans[maxN];
-string str;
 int arr[maxN];
 signed main()
 {

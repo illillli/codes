@@ -10,12 +10,10 @@
 #define llinf 9223372036854775807
 #define intinf 2147483647
 #define pi acos(-1)
-const int maxN = 2e5 + 5;
 using namespace std;
 
 int t, n, m;
 int a, b;
-int ans[maxN];
 string str;
 signed main()
 {
@@ -24,7 +22,7 @@ signed main()
     int arr[n][m];
     int dp[n][m];
     for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < m; j++)
         {
             cin >> arr[i][j];
             if (i == 0 && j == 0)
